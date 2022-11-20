@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://app.boteria.com.br/cdn/webchat/webchat.v2.css" />
+    <script src="https://app.boteria.com.br/cdn/libs/showdown.min.js"></script>
+    <script src="https://app.boteria.com.br/cdn/libs/axios.js"></script>
+    <script src="https://app.boteria.com.br/cdn/libs/socket.io.js"></script>
+    <script src="https://app.boteria.com.br/cdn/webchat/webchat.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+
+    <link rel="shortcut icon" href="apple-touch-icon.png">
+    <title>BethBot</title>
+</head>
+<body>
+    <header class="menu">
+        <div class="logo"><img src="Beth.png"></div>
+        <div class="hamburguer">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#Oque" class="active">Sobre</a>
+                </li>
+                <li>  
+                    <a href="#info">Funcionamento</a>
+                </li>
+                <li>
+                    <a href="#curiosidade">Curiosidade</a>
+                </li>
+                <li>
+                    <a href="#contato">Informações</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="principal">
+            <div class="imagembeth">
+                <img id="LogoBeth" src="Beth.png">
+            </div>
+            <div class="principalText">   
+                <h1 id="beth" >BETH</h1>
+                <h1 id="bot" >BOT</h1>
+            </div>
+            <div>
+                <a href="https://app.boteria.com.br/webchat/636107d1d4d890001877cf97" target="_blank"><button class="btn">Acessar o bot</button></a>
+            </div>
+        </div>
+
+        <div class="Oque" id="Oque">
+            <div>
+                <h1>Sobre</h1>
+            </div>
+            <div class="conteudo-imagem">
+                <div>
+                    <p>Beth Bot é um sistema que utiliza inteligência artificial para simular interações humanas em conversas, possibilitando a comunicação entre pessoa e dispositivo. Este bot traz repertório sobre segurança da informação. A criação dele faz parte do trabalho desenvolvido pelos alunos do 2º período do curso de Sistemas de Informação. O propósito é difundir conhecimento relacionados à segurança digital para as pessoas, através de bot. </p>
+                </div>
+                <div>
+                    <img src="ponto-de-interrogacao (2).png">
+                </div>
+            </div>
+        </div>
+
+        <div id="fundo-info">
+            <div class="info" id="info">
+                <div>
+                    <h1>Funcionamento</h1>
+                </div> 
+                <div class="conteudo-imagem">
+                    <div>
+                        <p>O bot foi desenvolvido se baseado em regras e palavras-chave. A comunicação do usuário com o sistema se baseia em responder selecionando dentre as opções de perguntas pré-determinadas e o bot terá respostas pré-determinadas para cada um desses questionamentos.</p>
+                    </div>
+                    <div>
+                        <img src="web-chat (3).png">
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+        <div id="fundo-curiosidade">
+            <div class="curiosidade" id="curiosidade">
+                <div>
+                    <h1>Curiosidade</h1>
+                </div>
+                <div class="conteudo-imagem">
+                    <div>
+                        <p>A inspiração para o nome surgiu após o nome da Rainha Elizabeth II ficar em destaque com a notícia de seu óbito. Quando pegamos o apelido Beth combinado com a palavra Bot foi notável a boa sonoridade que essa junção trouxe, além do nome soar amigável.</p>    
+                    </div>
+                    <div>
+                        <img src="queen (1).png">
+                    </div>
+                </div>     
+            </div>
+        </div>
+        
+        <div>
+            <div class="desenvolvedores" id="contato">
+                <div>
+                    <h1>Informações</h1>
+                </div>
+                <div class="equipe-contato">
+                    <div class="equipe">
+                        <div>
+                            <h1>Equipe</h1>
+                        </div>
+                        <div>
+                            <p>Gabriel Alves Carvalho</p>
+                            <p>Gabriela Stéfane dos Reis</p>
+                            <p>Lucas Steferson Silva Ramos</p>
+                            <p>Samella Stéfani Silva Ramos</p>
+                        </div>
+                    </div>
+                    <div class="contato">
+                        <div>
+                            <h1>Contato</h1>
+                        </div>
+                        <div>
+                            <p>E-mail: bethbotchat@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        hamburguer = document.querySelector(".hamburguer");
+        hamburguer.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
